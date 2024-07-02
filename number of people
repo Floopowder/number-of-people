@@ -1,0 +1,17 @@
+def calculate_population(year):
+    # Current population (approximately)
+    current_population = 7.9e9  # 7.9 billion
+    
+    # Growth rate (hypothetical, for demonstration)
+    growth_rate = 1.05  # 5% growth rate per year (hypothetical)
+    
+    # Calculate population projection
+    years_to_project = year - 2024  # Calculate years from 2024 to target year
+    projected_population = current_population * (growth_rate ** years_to_project)
+    
+    return projected_population
+
+# Calculate population in 2030
+year = 2030
+population_2030 = calculate_population(year)
+print(f"Estimated population in {year}: {population_2030:.2f} billion")
